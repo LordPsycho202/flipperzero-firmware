@@ -1,0 +1,17 @@
+---
+stages:
+  - build
+
+variables:
+    GIT_SUBMODULE_STRATEGY: normal
+
+build:
+  stage: build
+  tags:
+    - flipper_firmware
+  script:
+    - docker-compose up -d
+    - docker-compose exec -T dev make
+  artifacts:
+    paths:
+      - dist/
