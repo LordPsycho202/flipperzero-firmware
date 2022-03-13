@@ -1,0 +1,16 @@
+---
+stages:
+  - build
+#  - build
+
+
+build:
+  stage: build
+  tags:
+    - flipper-firmware
+  script:
+    - docker-compose up -d
+    - docker-compose exec dev make
+  artifacts:
+    paths:
+      - dist/
