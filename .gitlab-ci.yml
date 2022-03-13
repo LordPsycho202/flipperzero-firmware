@@ -7,7 +7,7 @@ stages:
 build:
   stage: build
   tags:
-    - flipper-firmware
+    - flipper_firmware
   script:
     - docker-compose up -d
     - docker-compose exec dev make
