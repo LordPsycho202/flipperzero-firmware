@@ -1,8 +1,9 @@
 ---
 stages:
   - build
-#  - build
 
+variables:
+    GIT_SUBMODULE_STRATEGY: normal
 
 build:
   stage: build
