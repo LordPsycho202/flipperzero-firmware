@@ -11,7 +11,7 @@ build:
     - flipper_firmware
   script:
     - docker-compose up -d
-    - docker-compose exec dev make
+    - docker-compose exec dev make -T
   artifacts:
     paths:
       - dist/
