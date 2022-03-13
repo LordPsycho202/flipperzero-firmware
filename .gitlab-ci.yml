@@ -4,6 +4,8 @@ stages:
 
 variables:
     GIT_SUBMODULE_STRATEGY: normal
+    GIT_STRATEGY: clone
+
 
 build:
   stage: build
