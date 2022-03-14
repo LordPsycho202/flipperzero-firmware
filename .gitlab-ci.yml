@@ -22,7 +22,7 @@ variables:
   DOCKER_TLS_CERTDIR: "/certs"
 
 before_script:
-  - docker info --privileged
+  - docker info
 
 stages:
   - build
@@ -34,6 +34,7 @@ build:
   stage: build
   tags:
     - dind
+    - docker
   script:
     - docker-compose up -d
     - docker-compose exec -T dev make
