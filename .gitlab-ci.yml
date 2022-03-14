@@ -22,7 +22,7 @@ variables:
   DOCKER_TLS_CERTDIR: "/certs"
 
 before_script:
-  - docker info
+  - docker info --privileged
 
 stages:
   - build
