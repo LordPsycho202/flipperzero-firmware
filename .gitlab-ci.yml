@@ -20,12 +20,15 @@ variables:
   # `/certs/client` to share between the service and job
   # container, thanks to volume mount from config.toml
   DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_DRIVER: overlay
 
 before_script:
   - docker info
   - apk update
   - apk upgrade
-  - apk add python python-dev py-pip build-base
+  - apk add curl jq python3 python3-dev build-base libffi-dev libressl-dev gettext
+  - curl -O https://bootstrap.pypa.io/get-pip.py
+  - python3 get-pip.py
   - pip install docker-compose
 
 stages:
