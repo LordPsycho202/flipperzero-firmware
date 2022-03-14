@@ -32,8 +32,6 @@ variables:
 
 build:
   stage: build
-  tags:
-    - kubernetes
   script:
     - docker-compose up -d
     - docker-compose exec -T dev make
