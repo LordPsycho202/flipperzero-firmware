@@ -13,7 +13,7 @@
 #define DOLPHIN_STATE_HEADER_VERSION 0x01
 #define LEVEL2_THRESHOLD 735
 #define LEVEL3_THRESHOLD 2940
-#define BUTTHURT_MAX 14
+#define BUTTHURT_MAX 4
 #define BUTTHURT_MIN 0
 
 DolphinState* dolphin_state_alloc() {
