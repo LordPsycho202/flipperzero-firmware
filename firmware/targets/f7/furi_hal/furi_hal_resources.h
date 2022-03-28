@@ -76,13 +76,15 @@ extern const GpioPin gpio_rfid_carrier_out;
 extern const GpioPin gpio_rfid_data_in;
 extern const GpioPin gpio_rfid_carrier;
 
-extern const GpioPin gpio_irda_rx;
-extern const GpioPin gpio_irda_tx;
+extern const GpioPin gpio_infrared_rx;
+extern const GpioPin gpio_infrared_tx;
 
 extern const GpioPin gpio_usart_tx;
 extern const GpioPin gpio_usart_rx;
 extern const GpioPin gpio_i2c_power_sda;
 extern const GpioPin gpio_i2c_power_scl;
+
+extern const GpioPin gpio_speaker;
 
 #ifdef __cplusplus
 }
